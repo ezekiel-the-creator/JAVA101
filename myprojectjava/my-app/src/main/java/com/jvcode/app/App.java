@@ -63,4 +63,49 @@ public class App
         System.out.println(Integer.toString(i, 16)); //prints 2a
         System.out.println(Integer.toString(i, 2)); //prints 101010
     }
+       //String types and literals
+
+   public static void compareReferences(){
+    System.out.println("\nComparing string references:");
+    String s1 = "abc";
+    String s2 = "abc";
+    System.out.println(s1 == s2);
+    System.out.println("abc" == s1);
+
+    String o1 = new String("abc");
+    String o2 = new String("abc");
+    System.out.println("abc" == o1);
+    System.out.println(o1 == o2);
+
+    System.out.println("\ncomparing string references after using intern():");
+    System.out.println("abc" == o1.intern());
+    System.out.println("\nCompare string spelling:");
+    System.out.println(o1.equals(o2));
+    System.out.println(o2.equals(o1));
+    System.out.println(o1.equals("abc"));
+    System.out.println("abc".equals("abc"));
+}
+
+public static void textBlock(){
+    System.outprintln("\nText block:"); //Similar to Code block
+
+    String html1 = "<html>\n" +
+    "   <body>\n" +
+    "      <p>Hello World.</p>\n" +
+    "   </body>\n" +
+    "</html>\n";
+    System.out.println(html1);
+
+    String html2 = """
+        <html>
+           <body>
+              <p>Hello World.</p>
+           </body>
+        </html>
+          """;
+
+    System.out.println(html2);
+
+}
+
 }
