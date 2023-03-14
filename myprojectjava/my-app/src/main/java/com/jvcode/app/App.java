@@ -87,15 +87,15 @@ public class App
 }
 
 public static void textBlock(){
-    System.outprintln("\nText block:"); //Similar to Code block
-
+    System.outprintln("\nText block:"); //Similar to Code blocks
+    //without text block
     String html1 = "<html>\n" +
     "   <body>\n" +
     "      <p>Hello World.</p>\n" +
     "   </body>\n" +
     "</html>\n";
     System.out.println(html1);
-
+    //using text block
     String html2 = """
         <html>
            <body>
