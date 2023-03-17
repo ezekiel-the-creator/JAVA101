@@ -23,11 +23,11 @@ public class BankAccount{
     public double getBalance(){
         return balance;
     }
-
+    //method for depositing
     public void deposit(double amount){
         balance += amount;
     }
-
+    //method for withdrawing
     public void withdraw(double amount){
         if (amount > balance){
             System.out.println("Insufficient funds");
