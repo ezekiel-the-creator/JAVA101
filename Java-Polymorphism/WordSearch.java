@@ -1,4 +1,7 @@
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 public class WordSearch {
     public static void main(String... args){
@@ -13,11 +16,11 @@ public class WordSearch {
             int row = rand.nextInt(10);
             int col = rand.nextInt(10);
             for (int i = 0; i < word.length(); i++){
-                if(direction == 0){
+                if(direction == 0 && col+ i < 10){
                     grid[row][col+i] = word.charAt(i);
-                }else if (direction == 1){
+                }else if (direction == 1 && row+i < 10){
                     grid[row+i][col] = word.charAt(i);
-                }else{
+                }else if (row+i < 10 && col+i < 10){
                     grid[row+i][col+i] = word.charAt(i);
                 }
             }
@@ -39,5 +42,23 @@ public class WordSearch {
             }
             System.out.println();
         }
+
+        //List of words to find
+        List<String> wordList = Arrays.asList(words);
+
+        try (//Allow the player to search for words
+        Scanner scanner = new Scanner(System.in)) {
+            while (!wordList.isEmpty()){
+                System.out.print("Enter a word to find: ");
+                String word = scanner.nextLine();
+                if(wordList.contains(word)){
+                    System.out.println("You found the word \"" + word + "\"!");
+                }else{
+                    System.out.println("Sorry, that word is not in the puzzle.");
+                }
+            }
+        }
+        //Check for victory 
+        System.out.println("congratulations, you found all words");
     }
 }
