@@ -48,17 +48,20 @@ public class WordSearch {
 
         try (//Allow the player to search for words
         Scanner scanner = new Scanner(System.in)) {
-            while (!wordList.isEmpty()){
+            int wordsFound = 0;
+            while (!wordList.isEmpty() && wordsFound < wordList.size()){
                 System.out.print("Enter a word to find: ");
                 String word = scanner.nextLine();
                 if(wordList.contains(word)){
                     System.out.println("You found the word \"" + word + "\"!");
+                    wordsFound++;
                 }else{
                     System.out.println("Sorry, that word is not in the puzzle.");
                 }
             }
+            if (wordsFound == wordList.size()){
+                System.out.println("Congratulations, you found all the words!");
+            }
         }
-        //Check for victory 
-        System.out.println("congratulations, you found all words");
     }
 }
