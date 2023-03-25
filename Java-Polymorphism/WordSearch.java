@@ -12,19 +12,38 @@ public class WordSearch {
         String[] words = {"java", "python", "html", "C++", "ruby", "rust"};
         Random rand = new Random();
         for(String word : words){
-            int direction = rand.nextInt(3);
+            int direction = rand.nextInt(2);
             int row = rand.nextInt(10);
             int col = rand.nextInt(10);
+            boolean canPlaceWord = true;
+
+            //Placing words horizontally
+           if(direction == 0 && col+word.length() < 10){
             for (int i = 0; i < word.length(); i++){
-                if(direction == 0 && col+ i < 10){
-                    grid[row][col+i] = word.charAt(i);
-                }else if (direction == 1 && row+i < 10){
-                    grid[row+i][col] = word.charAt(i);
-                }else if (row+i < 10 && col+i < 10){
-                    grid[row+i][col+i] = word.charAt(i);
+                if (grid[row][col+i] != ' ' && grid[row][col + i] != word.charAt(i)){
+                    canPlaceWord = false;
+                    break;
                 }
             }
-        }
+            if (canPlaceWord){
+                for (int i = 0; i < word.length(); i++){
+                    grid[row][col + i] = word.charAt(i);
+                }
+            }
+           }else if(row + word.length() < 10){//Placing words vertically
+            for(int i = 0; i < word.length(); i++){
+                if(grid[row + i][col] != ' ' && grid[row + i][col] != word.charAt(i)){
+                    canPlaceWord = false;
+                    break;
+                }
+            }
+            if (canPlaceWord){
+                for (int i = 0; i < word.length(); i++){
+                    grid[row + i][col] = word.charAt(i);
+                }
+            }
+           } 
+       }
         
         //Fill the remaining cells
         for (int i = 0; i < 10; i++){
