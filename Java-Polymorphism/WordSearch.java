@@ -9,7 +9,7 @@ public class WordSearch {
         char[][] grid = new char[10][10];
 
         //Add words to the grid
-        String[] words = {"java", "python", "Solidity", "Csharp", "ruby"};
+        String[] words = {"java", "python", "html", "C++", "ruby", "rust"};
         Random rand = new Random();
         for(String word : words){
             int direction = rand.nextInt(3);
