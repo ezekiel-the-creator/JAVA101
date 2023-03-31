@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AccessModifiers",
+            "request": "launch",
+            "mainClass": "AccessModifiers",
+            "projectName": "JAVA101_30c4feda"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
