@@ -4,9 +4,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.javamoney</groupId>
-  <artifactId>moneta</artifactId>
-  <version>1.5.2</version>
+  <groupId>java.javacash</groupId>
+  <artifactId>jcash</artifactId>
+  <version>1.0</version>
 
   <name>moneyconv</name>
   <!-- FIXME change it to the project's website -->
@@ -19,6 +19,11 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.javamoney</groupId>
+      <artifactId>moneta</artifactId>
+      <version>1.3.1</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
