@@ -8,6 +8,6 @@ public class Shape8{
             "      11     ",
             "     11      ",
             "    11        "
-        }
+        };
     }
 }
