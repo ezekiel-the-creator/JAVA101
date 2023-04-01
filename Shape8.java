@@ -9,5 +9,10 @@ public class Shape8{
             "     11      ",
             "    11        "
         };
+
+        for (int i = 0; i < patterns.length; i++) {
+            String pattern = patterns[i];
+            System.out.println(pattern);
+        }
     }
 }
