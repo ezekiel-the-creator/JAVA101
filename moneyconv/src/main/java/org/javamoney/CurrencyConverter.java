@@ -12,6 +12,6 @@ public class CurrencyConverter {
         System.out.println("Enter the exchange rate: ");
         exchangeRate = scanner.nextDouble();
 
-        
+        convertedAmount = amount * exchangeRate;
     }
 }
