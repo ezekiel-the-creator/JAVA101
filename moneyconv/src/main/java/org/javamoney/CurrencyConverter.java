@@ -14,7 +14,9 @@ public class CurrencyConverter {
 
         System.out.println("Enter the amount to convert: ");
         amount = scanner.nextDouble();
-        
+
         convertedAmount = amount * exchangeRate;
+
+        System.out.println(amount + " dollars is equivalen to " + convertedAmount + " shillings.");
     }
 }
