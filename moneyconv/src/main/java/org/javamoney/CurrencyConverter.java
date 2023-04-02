@@ -9,6 +9,9 @@ public class CurrencyConverter {
         double convertedAmount;
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Enter the exchange rate: ");
+        exchangeRate = scanner.nextDouble();
+
         
     }
 }
