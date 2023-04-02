@@ -12,6 +12,9 @@ public class CurrencyConverter {
         System.out.println("Enter the exchange rate: ");
         exchangeRate = scanner.nextDouble();
 
+        System.out.println("Enter the amount to convert: ");
+        amount = scanner.nextDouble();
+        
         convertedAmount = amount * exchangeRate;
     }
 }
