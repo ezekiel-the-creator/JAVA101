@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "AddTwoNumbers",
             "request": "launch",
             "mainClass": "AddTwoNumbers",
