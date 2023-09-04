@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AddTwoMatrices",
+            "request": "launch",
+            "mainClass": "AddTwoMatrices",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Calculator",
             "request": "launch",
             "mainClass": "Calculator",
