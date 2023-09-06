@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Armstrong",
+            "request": "launch",
+            "mainClass": "Armstrong",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "AddTwoMatrices",
             "request": "launch",
             "mainClass": "AddTwoMatrices",
