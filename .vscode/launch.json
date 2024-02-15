@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CLA",
+            "request": "launch",
+            "mainClass": "CLA",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Armstrong",
             "request": "launch",
             "mainClass": "Armstrong",
